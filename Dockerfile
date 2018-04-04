@@ -1,4 +1,4 @@
-FROM ubuntu:rolling
+FROM ubuntu:bionic
 
 RUN apt-get update
 RUN apt-get upgrade -y
