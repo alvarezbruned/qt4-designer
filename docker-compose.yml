@@ -1,0 +1,11 @@
+version: '2'
+services:
+  qt4designer:
+    image: 'albertalvarezbruned/qt4-designer'
+    container_name: 'qt4-designer'
+    volumes:
+      - '/tmp/.X11-unix:/tmp/.X11-unix'
+      - './Documents:/home/Documents'
+    environment:
+#      - DISPLAY=$DISPLAY_MAC
+       - DISPLAY=unix$DISPLAY 
